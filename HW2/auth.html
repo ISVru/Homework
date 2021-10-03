@@ -1,0 +1,38 @@
+<!-- auth.html форма авторизации -->
+<!doctype html>
+<html lang="ru">
+<head>
+    <title>Авторизация</title>
+    <meta charset="utf-8">
+</head>
+<body>
+<form action="#" method="post">
+    <div>
+        <label for="login">Введите логин</label> <!-- для логина вместе с input-->
+        <input id="login"
+               type="text"
+               placeholder="логин"
+               required
+               name="login">
+    </div>
+    <div>
+        <label for="password">Введите пароль</label>
+        <input id="password"
+               type="password"
+               placeholder="пароль"
+               required
+               minlength="6"
+               name="password">
+    </div>
+    <div>
+        <label>
+            Запомнить
+            <input type="checkbox" name="remember" checked value="remember"> <!-- если checked то галочка по умолчанию отмечается-->
+        </label>
+    </div>
+
+    <input type="submit" value="Войти"> <!-- если кнопка submit  то данные уходят на сервер -->
+</form>
+</body>
+</html>
+

@@ -1,0 +1,64 @@
+<!doctype html>
+<html lang="ru">
+<head>
+    <title>Регистрация</title>
+    <meta charset="utf-8">
+</head>
+<body>
+<h1><p>Заполните форму регистрации</p></h1>
+<p>
+    Если Вы уже зарегистрированы на нашем сайте ,перейдите на страницу
+    <a href="auth.html">Авторизация</a>
+</p>
+<form action="#" method="post">
+    <div>
+        <label for="name">Введите имя</label> <!-- для логина вместе с input-->
+        <input id="name"
+               type="text"
+               placeholder="имя"
+               required
+               name="name">
+    </div>
+    <div>
+        <label for="email">Введите email</label>
+        <input id="email"
+               type="email"
+               placeholder="адрес эл.почты"
+               required
+               name="name">
+    </div>
+    <div>
+        <label for="age">Укажите Ваш возраст</label>
+        <input id="age"
+               type="number"
+               name="name"
+               min="5"
+               step="10">
+        <div>
+            <label for="password">Введите пароль</label>
+            <input id="password"
+                   type="password"
+                   placeholder="пароль"
+                   required
+                   minlength="6"
+                   name="password">
+            <div>
+                <label for="confirm password">Подтвердите пароль</label>
+                <input id="confirm password"
+                       type="password"
+                       placeholder="пароль"
+                       required
+                       minlength="6"
+                       name="confirm">
+                <div>
+                    <label>
+                        Запомнить
+                        <input type="checkbox" name="remember" checked value="remember">
+                        <!-- если checked то галочка по умолчанию отмечается-->
+                    </label>
+                </div>
+
+                <input type="submit" value="Отправить"> <!-- если кнопка submit  то данные уходят на сервер -->
+</form>
+</body>
+</html>

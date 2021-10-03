@@ -1,0 +1,125 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title>Подбор квартиры по параметрам</title>
+</head>
+<body>
+<h1><p>Подбор квартиры по параметрам</p></h1>
+<form action="#" method="post" enctype="multipart/form-data"> <!-- даем пользователю загрузить на сайт фото ил идок-->
+    <div>
+        <label for="rooms">Комнатность</label>
+        <!--на сервер придет category: first -->
+        <select id="rooms" name="rooms">
+            <option value="zero">Студия</option> <!--+-->
+            <option value="first">1</option> <!--+-->
+            <option value="second">2</option>
+            <option value="third">3</option>
+            <option value="fourth">4+</option>
+        </select>
+    </div>
+    <div>
+        <label for="items">Выберите метро:</label>
+        <select id="items">
+            <optgroup label="Кировско-Выборгская">
+                <option value="Lesnaya">Лесная</option>
+                <option value="Avtovo">Автово</option>
+                <option value="Narvskaya">Нарвская</option>
+                <option value="Baltian">Балтийская</option>
+            </optgroup>
+            <optgroup label="Московско-Петроградская">
+                <option value="Zvezdnaya">Звёздная</option>
+                <option value="Moskovskaya">Московская</option>
+                <option value="Park-Pobedy">Парк-Победы</option>
+                <option value="Elekrosila">Электросила</option>
+            </optgroup>
+        </select>
+    </div>
+    <div>
+        <label for="age-home">Введите год сдачи дома</label>
+        <input id="age-home"
+               type="number"
+               name="name"
+               min="2010"
+               max="2022"
+               step="1">
+        <div>
+            <div>
+                <label for="name">Укажите максимальную площадь,кв/м</label>
+                <input id="name" type="number" name="name">
+            </div>
+            <div>
+                <label for="price-min">Стоимость мин</label>
+                <input id="price-min"
+                       type="number"
+                       name="name"
+                       min="100000"
+                       max="2000000"
+                       step="100000">
+            </div>
+            <div>
+                <label for="price-max">Стоимость мах</label>
+                <input id="price-max"
+                       type="number"
+                       name="name"
+                       min="100000"
+                       max="2000000"
+                       step="100000">
+            </div>
+            <div>
+                <label for="floor">Выберите этаж</label>
+                <input id="floor"
+                       type="number"
+                       name="name"
+                       min="2"
+                       max="23"
+                       step="1">
+                <label for="ne1">Не первый</label>
+                <input id="ne1" type="checkbox" name="ne1" value="ne1">
+                <label for="notend">Не последний</label>
+                <input id="notend" type="checkbox" name="notend" value="notend">
+            </div>
+            <div>
+                <!--группа чекбоксов (выбор варианта из нескльких)-->
+                <!-- additional: [decoration.pack]-->
+                <h4>Дополнительно:</h4>
+                <label>
+                    Украшение
+                    <input type="checkbox" name="additional[]" value="decoration">
+                    <!-- значения для группы параметров и они придут на сервер все вместе-->
+                </label>
+                <label>
+                    Надпись
+                    <input type="checkbox" name="additional[]" value="text">
+                </label>
+                <label>
+                    Подарочная упаковка
+                    <input type="checkbox" name="additional[]" value="pack">
+                </label>
+            </div>
+            <div>
+                <label for="picture">Загрузите изображение</label>
+                <input id="picture" type="file"
+                       name="picture" multiple
+                       accept="image/*">
+                <!-- несколько файлов можно выбрать, выбор ограничен выбором только изобраджений!!-->
+                <input type="file" name="picture"> <!-- один файл можно выбрать любой файл-->
+            </div>
+            <div>
+                <!--группа радиокнопок (выбор варианта из нескльких)-->
+                <!--значение пойдет на сервер только одно из 3 answer: third-->
+                <label>
+                    Вариант 1
+                    <input type="radio" name="answer" value="first">
+                </label> <label>
+                Вариант 2
+                <input type="radio" name="answer" value="second">
+            </label> <label>
+                Вариант 3
+                <input type="radio" name="answer" value="therd">
+            </label>
+            </div>
+
+</form>
+</body>
+</html>
