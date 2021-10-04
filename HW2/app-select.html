@@ -46,7 +46,7 @@
         <div>
             <div>
                 <label for="name">Укажите максимальную площадь,кв/м</label>
-                <input id="name" type="number" name="name">
+                <input id="name" type="number" name="name" min="5">
             </div>
             <div>
                 <label for="price-min">Стоимость мин</label>
@@ -80,44 +80,41 @@
                 <input id="notend" type="checkbox" name="notend" value="notend">
             </div>
             <div>
-                <!--группа чекбоксов (выбор варианта из нескльких)-->
-                <!-- additional: [decoration.pack]-->
-                <h4>Дополнительно:</h4>
+                <h4>Выбор дополнительных опций:</h4>
+                <div>
+                    <label>
+                        Business Class
+                        <input type="radio" name="answer" value="first">
+                    </label>
+                    <label>
+                        Premium Class
+                        <input type="radio" name="answer" value="second">
+                    </label>
+                    <label>
+                        Deluxe Class
+                        <input type="radio" name="answer" value="therd">
+                    </label>
+                </div>
+            </div>
+            <div>
                 <label>
-                    Украшение
-                    <input type="checkbox" name="additional[]" value="decoration">
-                    <!-- значения для группы параметров и они придут на сервер все вместе-->
+                    С отделкой
+                    <input type="radio" name="finishing" value="first">
                 </label>
                 <label>
-                    Надпись
-                    <input type="checkbox" name="additional[]" value="text">
-                </label>
-                <label>
-                    Подарочная упаковка
-                    <input type="checkbox" name="additional[]" value="pack">
+                    Без отделки
+                    <input type="radio" name="finishing" value="second">
                 </label>
             </div>
             <div>
-                <label for="picture">Загрузите изображение</label>
-                <input id="picture" type="file"
-                       name="picture" multiple
-                       accept="image/*">
-                <!-- несколько файлов можно выбрать, выбор ограничен выбором только изобраджений!!-->
-                <input type="file" name="picture"> <!-- один файл можно выбрать любой файл-->
-            </div>
-            <div>
-                <!--группа радиокнопок (выбор варианта из нескльких)-->
-                <!--значение пойдет на сервер только одно из 3 answer: third-->
                 <label>
-                    Вариант 1
-                    <input type="radio" name="answer" value="first">
-                </label> <label>
-                Вариант 2
-                <input type="radio" name="answer" value="second">
-            </label> <label>
-                Вариант 3
-                <input type="radio" name="answer" value="therd">
-            </label>
+                    С террасой
+                    <input type="radio" name="terrace" value="first">
+                </label>
+                <label>
+                    Без террасы
+                    <input type="radio" name="terrace" value="second">
+                </label>
             </div>
 
 </form>
