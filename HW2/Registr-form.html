@@ -5,7 +5,7 @@
     <meta charset="utf-8">
 </head>
 <body>
-<h1><p>Заполните форму регистрации</p></h1>
+<h1>Заполните форму регистрации</h1>
 <p>
     Если Вы уже зарегистрированы на нашем сайте ,перейдите на страницу
     <a href="auth.html">Авторизация</a>
@@ -16,11 +16,16 @@
         <input id="name"
                type="text"
                placeholder="имя"
-               required
+               name="name">
+    </div><div>
+        <label for="tel">Введите номер телефона</label> <!-- для логина вместе с input-->
+        <input id="tel"
+               type="number"
+               placeholder="номер телефона"
                name="name">
     </div>
     <div>
-        <label for="email">Введите email</label>
+        <label for="email">Введите email *</label>
         <input id="email"
                type="email"
                placeholder="адрес эл.почты"
@@ -28,28 +33,31 @@
                name="name">
     </div>
     <div>
-        <label for="age">Укажите Ваш возраст</label>
+        <label for="age">Укажите Ваш возраст *</label>
         <input id="age"
                type="number"
                name="name"
                min="5"
                step="10">
+    </div>
         <div>
-            <label for="password">Введите пароль</label>
+            <label for="password">Введите пароль *</label>
             <input id="password"
                    type="password"
                    placeholder="пароль"
                    required
                    minlength="6"
                    name="password">
+        </div>
             <div>
-                <label for="confirm password">Подтвердите пароль</label>
+                <label for="confirm password">Подтвердите пароль *</label>
                 <input id="confirm password"
                        type="password"
                        placeholder="пароль"
                        required
                        minlength="6"
                        name="confirm">
+            </div>
                 <div>
                     <label>
                         Запомнить
