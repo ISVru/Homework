@@ -1,48 +1,59 @@
 .body {
     margin: 0;
 }
+
+.container {
+    background-color: orange;
+    margin: 0;
+    padding: 0;
+}
+
+.mainmenu, .sabmenu {
+    list-style-type: none;
+}
+
 .sabmenu {
     display: none;
 }
 
-.container  {
-    /*display: inline;*/
-    background-color: red;
-}
-
 .mainmenu > li {
     display: inline-block;
-    background-color: orange;
-    padding: 5px;
-    /*max-width: 700px;*/
 }
+
 .mainmenu a {
+    padding: 10px;
     display: inline-block;
-    color: red;
     text-decoration: none;
+}
+
+.mainmenu li {
     border-bottom: 3px solid transparent;
 }
-.mainmenu a:hover {
-    border-bottom: 3px solid red;
+
+.mainmenu li:hover {
+    border-bottom: 3px solid orangered;
 }
 
-li {
+.cards {
+    padding-top: 10px;
+    text-decoration: none;
+    border-radius: 6px;
+    font-size: 18pt;
     list-style-type: none;
-   }
+    max-width: 600px;
+    margin: 0 auto;
+}
 
-.card\'s > li.img1 {
-    padding: 0.3%;
-    border: 1px solid silver;
-    border-radius: 5px;
+.cards {
+    text-align: center;
+}
+
+img {
+    width: 100%;
+    height: auto;
     object-fit: cover;
 }
-.card\'s > li.img2 {
-    padding: 0.3%;
-    border: 1px solid silver;
-    border-radius: 5px;
-    object-fit: cover;
 
-}
 .bution {
     display: inline-block;
     padding: 10px;
@@ -55,40 +66,20 @@ li {
     color: blue;
 }
 
-.card\'s > p {
-    text-align: justify;
-}
-.pagination >p {
-    text-align: justify;
-}
-
-
-.card\'s {
-    display: inline-block;
-    padding-top: 5px;
-    padding-bottom: 5px;
-    text-decoration: none;
-    border-radius: 6px;
-    font-size: 18pt;
-    list-style-type: none;
-    text-align: center;
-    width: auto;
-}
-
-.panel {
-    text-align: center;
-}
 .pagination {
-    display: inline-block;
-    padding-top: 5px;
-    padding-bottom: 5px;
-    text-decoration: none;
-    border-radius: 6px;
-    font-size: 18pt;
-    list-style-type: none;
     text-align: center;
-    width: auto;
 }
-.bution2 {
+
+.pagination a.active {
     background-color: orange;
 }
+
+.pagination > a {
+    display: inline-block;
+    padding: 10px;
+    font-size: 18pt;
+    text-decoration: none;
+    border: 3px solid orange;
+
+}
+

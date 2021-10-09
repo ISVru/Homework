@@ -1,74 +1,57 @@
 <!doctype html>
+<html lang="ru">
 <head>
     <title>Главная</title>
     <meta charset="utf-8">
     <link rel="stylesheet" href="css/index.css">
 </head>
 <body>
-<nav class="container" id="line">
-    <ul class="mainmenu">
-        <li><a href="#">Пункт 1</a></li>
-        <li>
-            <a href="#">Пункт 2</a>
-            <ul class="sabmenu">
-                <li><a href="#">Пункт 2.1</a></li>
-                <li><a href="#">Пункт 2.2</a></li>
-            </ul>
-        </li>
-        <li><a href="#">Пункт 3</a></li>
-    </ul>
-</nav>
+<header>
+    <nav class="container" id="menu">
+        <ul class="mainmenu">
+            <li class="active"><a href="#">Пункт 1</a></li>
+            <li>
+                <a href="#">Пункт 2</a>
+                <ul class="sabmenu">
+                    <li><a href="#">Пункт 2.1</a></li>
+                    <li><a href="#">Пункт 2.2</a></li>
+                </ul>
+            </li>
+            <li><a href="#">Пункт 3</a></li>
+        </ul>
+    </nav>
+</header>
 <main>
     <section>
-        <ul class="card's">
-            <h3>Заголовок</h3>
-            <li class="img1">
+        <div class="cards">
+            <div>
+                <h3>Заголовок</h3>
                 <img src="img/img1.png" alt="Акция 1">
-            </li>
-            <p>Небольшое описание карточки Небольшое описание карточки Небольшое описание карточки Небольшое
-                описание
-                карточки Небольшое описание карточки Небольшое описание карточки Небольшое описание карточки</p>
-            <li class="bution">
-                <a href="#">Cсылка</a>
-            </li>
-            <h3>Заголовок</h3>
-            <li class="img2">
-                <img src="img/img2.png" alt="Акция 2">
-            </li>
-            <p>Небольшое описание карточки Небольшое описание карточки Небольшое описание карточки Небольшое
-                описание
-                карточки Небольшое описание карточки Небольшое описание карточки Небольшое описание карточки</p>
-            <li class="bution">
-                <a href="#">Cсылка</a>
-            </li>
-        </ul>
-        <ul class="pagination">
-            <p>Небольшое описание карточки Небольшое описание карточки Небольшое описание карточки Небольшое
-                описание
-                карточки Небольшое описание карточки Небольшое описание карточки Небольшое описание карточки</p>
-            <li class="bution">
-                <a href="#">Cсылка</a>
-            </li>
-            <li class="panel">
-                <a href="#">...</a>
-                <a href="#">1</a>
-            <li class="bution2">
-                <a href="#">2</a>
-            </li>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Numquam, sed.</p>
+                <div class="bution"><a href="#">Ссылка</a></div>
+            </div>
+            <div>
+                <h3>Заголовок</h3>
+                <img src="img/img1.png" alt="Акция 1">
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Numquam, sed.</p>
+                <div class="bution"><a href="#">Ссылка</a></div>
+            </div>
+        </div>
+        <div class="pagination">
+            <a href="#">...</a>
+            <a class="active" href="#">1</a>
+            <a href="#">2</a>
             <a href="#">3</a>
             <a href="#">4</a>
             <a href="#">5</a>
             <a href="#">...</a>
-        </ul>
+        </div>
     </section>
 </main>
-
 
 <footer>
 
 </footer>
 
-
-</ul>
 </body>
 </html>
