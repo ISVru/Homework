@@ -1,0 +1,112 @@
+@import "flex-box.css";
+@import "flex-grid.css";
+body {
+    margin: 0;
+}
+
+.container {
+    margin: 0 auto;
+    max-width: 1200px;
+}
+
+.item {
+    border: 1px solid #311B92;
+    padding: 5px;
+    /*margin: 5px;*/
+    background-color: #039BE5;
+}
+
+.gap {
+    gap: 10px;
+}
+aside{
+    background-color: #edc8b8;
+}
+.head{
+    background-color: #4d342f;
+    padding: 10px 0;
+}
+.logo{
+
+    color: #ecc8ba;
+    font-size: 12pt;
+
+}
+.justify{
+    justify-content: space-around;
+}
+.justifyb{
+    justify-content: center;
+}
+.justifybe{
+    justify-content: space-between;
+}
+.a a{
+    text-decoration: none;
+    color: #ecc8ba;
+    font-size: 10pt;
+
+}
+.align{
+    align-items: center;
+}
+.cart{
+    background-color: #d7ccc8;
+    color: #4d342f;
+    padding:5px 5px 5px;
+}
+.cart div{
+    display: flex;
+    flex-direction: column;
+}
+.cart div a{
+    text-decoration: none;
+}
+.cart p{
+    font-size: 8px;
+    text-align: left;
+    margin: 0;
+}
+.ma{
+    margin-top: 10px;
+}
+.mb{
+    margin-bottom: 10px;
+}
+.ml{
+    padding-left: 10px;
+}
+.ras{
+    height: 100%;
+    background-color: #d7ccc8;
+}
+h5{
+    margin: 5px 0;
+}
+.button>a{
+    text-align: center;
+    border: 1px solid #4d342f;
+    background-color: #4d342f;
+    color: #edc8b8;
+    margin-top: 5px;
+}
+.img img{
+    height: 100%;
+    width: 100%;
+
+}
+.images img{
+    width: 120px;
+    height: 100%;
+}
+.reimages img{
+    height: 100%;
+    width: 100%;
+}
+.foot{
+    background-color: #4d342f;
+}
+
+.warp{
+    flex-wrap: wrap;
+}
