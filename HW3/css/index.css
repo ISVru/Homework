@@ -1,5 +1,8 @@
 .body {
     margin: 0;
+	 background-image: url("img/fon_1.jpg");
+	 background-size: cover;
+	 background-attachment: fixed;
 }
 
 .container {
