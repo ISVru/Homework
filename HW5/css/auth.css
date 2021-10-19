@@ -1,7 +1,6 @@
 @import "style.css";
 body {
     background-image: url('../img/fon_4g.jpg');
-    background-repeat: no-repeat;
     background-size: cover;
     display: flex;
     justify-content: center;
