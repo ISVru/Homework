@@ -2,7 +2,6 @@
 
 body {
     background-image: url('../img/fon_4g.jpg');
-    background-repeat: no-repeat;
     background-size: cover;
     display: flex;
     justify-content: center;
@@ -116,6 +115,7 @@ form {
 input[type="submit"] {
     position: absolute;
     font-size: 1rem;
+<<<<<<< HEAD
     background-color:rgb(17,122,193);
     color: rgb(212, 214, 238);
     bottom: 1rem;
@@ -137,3 +137,13 @@ input[type="submit"] {
 
 
 
+=======
+    text-align: center;
+    border: none;
+    height: 40px;
+    width: 141px;
+    margin: 10px 0;
+    transition: .3s;
+    cursor: pointer;
+}
+>>>>>>> 8cdfb64f8cc9ea07487eff3f19fe6eecfb2dab65
