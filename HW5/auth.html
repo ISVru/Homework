@@ -2,33 +2,52 @@
 <html lang="ru">
 
 <head>
-	<meta charset="utf-8">
-	<title>Авторизация</title>
-	<script src="https://kit.fontawesome.com/9cf9a6173e.js" crossorigin="anonymous"></script>
-	<link rel="stylesheet" href="css/auth.css">
+    <meta charset="utf-8">
+    <title>Авторизация</title>
+    <script src="https://kit.fontawesome.com/9cf9a6173e.js" crossorigin="anonymous"></script>
+    <link rel="icon" href="img/favicon.ico" type="image/svg+xml">
+    <link rel="stylesheet" href="css/auth.css">
 </head>
 
 <body>
+<header>
+    <nav class="container" id="menu">
+        <a href="index.html">
+            <img src="img/logo_usr.png" alt="USR IOT" class="img-responsive"></a>
+        <a href="#">Товары</a>
+        <div class="submenu">
+            <a href="#">Категория 1</a>
+            <a href="#">Категория 2</a>
+            <a href="#">Категория 3</a>
+        </div>
+        <a href="#">Доставка/оплата</a>
+        <a href="#"><i class="fas fa-phone"></i> +79626995087</a>
+        <a href="#"><i class="fas fa-envelope"></i> info@usriot.ru </a>
+        <a href="#"><i class="fas fa-search"></i> Поиск</a>
+        <a href="auth.html"><i class="fas fa-caret-up"></i> Войти</a>
 
-	<form action="#" method="post">
-		<div>
-			<h3>Вход в личный кабинет</h3>
-			<input id="login" type="text" required name="login">
-			<span class="login-icon"><i class="far fa-user"></i></span>
-		</div>
-		<div>
-			<input id="password" type="password" required minlength="6" name="password">
-			<span class="pwd-icon"><i class="fas fa-unlock-alt"></i></span>
-		</div>
-		<div>
+                <a href="#">Корзина <i class="fas fa-shopping-cart"></i></a>
+    </nav>
+</header>
+<form action="#" method="post">
+        <div>
+            <h3>Вход в личный кабинет</h3>
+            <input id="login" type="text" required name="login">
+            <span class="login-icon"><i class="far fa-user"></i></span>
+        </div>
+        <div>
+            <input id="password" type="password" required minlength="6" name="password">
+            <span class="pwd-icon"><i class="fas fa-unlock-alt"></i></span>
+        </div>
+        <div>
 
-			<input id="remember" type="checkbox" name="remember" checked value="remember">
-			<label class="remember-label" for="remember">Запомнить</label>
-		</div>
+            <input id="remember" type="checkbox" name="remember" checked value="remember">
+            <label class="remember-label" for="remember">Запомнить</label>
+        </div>
 
-		<input type="submit" value="Войти">
-		<a class="registration" href="#">Регистрация</a>
-	</form>
+        <input type="submit" value="Войти">
+          </form>
+
 
 </body>
 

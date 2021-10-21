@@ -1,4 +1,5 @@
 @import "style.css";
+
 body {
     background-image: url('../img/fon_4g.jpg');
     background-repeat: no-repeat;
@@ -7,7 +8,6 @@ body {
     justify-content: center;
     align-items: center;
     height: 90vh;
-    font-family: 'roboto-regular', sans-serif;
 }
 
 body:before {
@@ -19,33 +19,25 @@ body:before {
     height: 100%;
     top: 0;
     left: 0;
-}
+    }
 
 form {
-    color: #ff5c00;
-    padding: 6rem;
-    background-color: #ffffff;
+    color:rgb(17,122,193);
+    padding: 3rem;
+    background-color: rgb(240,248,255);
     box-shadow: 0 10px 10px rgba(0, 0, 0, 0.22);
     border-radius: 5px;
 }
 
-input[type="text"],
-
-/* тег input со значением 'text' атрибута 'type' */
-
-input[type="password"],
-
-/* тег input со значением 'password' атрибута 'type' */
-
+input[type="text"], /* тег input со значением 'text' атрибута 'type' */
+input[type="password"],  /* тег input со значением 'password' атрибута 'type' */
 .login-icon,
 .pwd-icon {
     font-size: 1rem;
-    color: #0053a5;
+    color: rgb(17,122,193);
 }
 
-
 /* СТИЛИЗАЦИЯ  placeholder */
-
 input::-webkit-input-placeholder {
     color: #123C69;
 }
@@ -65,7 +57,6 @@ input[type="password"] {
     background-color: transparent;
     border-bottom: 3px solid #123C69;
     border-radius: 0;
-    /* верх право низ лево */
     padding: 5px 0 5px 40px;
 }
 
@@ -73,35 +64,76 @@ form div {
     position: relative;
 }
 
-.login-icon,
-.pwd-icon {
+.pwd-icon,
+.login-icon {
     position: absolute;
     left: 5px;
     bottom: 5px;
 }
 
+/* изменение строк авторизации при наведении */
 input[type="text"]:focus,
 input[type="password"]:focus {
     padding-left: 0;
-    border-bottom-color: #ff5c00;
+    border-bottom-color: rgb(255,109,0); /*при наведении подчеркивание становится красным*/
     padding-right: 40px;
 }
-
-input[type="text"]:focus+.login-icon,
-input[type="password"]:focus+.pwd-icon {
+/* скрываем иконки при активации строки */
+input[type="text"]:focus + .login-icon, /*+ означает что элемент идет сразу после инпута с типом текст в фокусе*/
+input[type="password"]:focus + .pwd-icon {
     display: none;
 }
-
-input[type="submit" i] {
-    background: #0054a7;
-    color: #ffffff;
-    border-radius: 5px;
-    font-size: 1rem;
-    text-align: center;
-    border: none;
-    height: 40px;
-    width: 141px;
-    margin: 10px 0;
-    transition: .3s;
-    cursor: pointer;
+input[type="checkbox"] {
+    position: absolute;
+    z-index: -1;
+    opacity: 0;
 }
+input[type="checkbox"]+label {
+    display: flex;
+    align-items: center;
+}
+input[type="checkbox"]+label::before {
+    content: "";
+    display: inline-block;
+    width: 1rem;
+    height: 1rem;
+    border: 3px solid rgb(17,122,193);
+    border-radius: 7px;
+    background-color: #ff6d00;
+    margin-top: 3px;
+    margin-right: 3px;
+}
+input[type="checkbox"]:checked+label::before {
+    background-color: rgb(212, 214, 238);
+    background-image: url(../img/icon_check2.svg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 90%;
+}
+form {
+    position: relative;
+}
+input[type="submit"] {
+    position: absolute;
+    font-size: 1rem;
+    background-color:rgb(17,122,193);
+    color: rgb(212, 214, 238);
+    bottom: 1rem;
+    width: 70%;
+    border: 0;
+    border-radius: 3px;
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
