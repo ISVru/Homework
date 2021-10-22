@@ -19,26 +19,26 @@ body {
 .gap {
     gap: 10px;
 }
-aside{
+aside {
     background-color: #edc8b8;
 }
-.head{
+.head {
     background-color: #4d342f;
     padding: 10px 0;
 }
-.logo{
+.logo {
 
     color: #ecc8ba;
     font-size: 12pt;
 
 }
-.justify{
+.justify {
     justify-content: space-around;
 }
-.justifyb{
+.justifyb {
     justify-content: center;
 }
-.justifybe{
+.justifybe {
     justify-content: space-between;
 }
 .a a{
@@ -47,40 +47,40 @@ aside{
     font-size: 10pt;
 
 }
-.align{
+.align {
     align-items: center;
 }
-.cart{
+.cart {
     background-color: #d7ccc8;
     color: #4d342f;
     padding:5px 5px 5px;
 }
-.cart div{
+.cart div {
     display: flex;
     flex-direction: column;
 }
-.cart div a{
+.cart div a {
     text-decoration: none;
 }
-.cart p{
+.cart p {
     font-size: 8px;
     text-align: left;
     margin: 0;
 }
-.ma{
+.ma {
     margin-top: 10px;
 }
-.mb{
+.mb {
     margin-bottom: 10px;
 }
-.ml{
+.ml {
     padding-left: 10px;
 }
-.ras{
+.ras {
     height: 100%;
     background-color: #d7ccc8;
 }
-h5{
+h5 {
     margin: 5px 0;
 }
 .button>a{
@@ -90,23 +90,23 @@ h5{
     color: #edc8b8;
     margin-top: 5px;
 }
-.img img{
+.img img {
     height: 100%;
     width: 100%;
 
 }
-.images img{
+.images img {
     width: 120px;
     height: 100%;
 }
-.reimages img{
+.reimages img {
     height: 100%;
     width: 100%;
 }
-.foot{
+.foot {
     background-color: #4d342f;
 }
 
-.warp{
+.warp {
     flex-wrap: wrap;
 }

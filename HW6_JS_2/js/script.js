@@ -4,12 +4,15 @@ console.log("[Задание 1] Дана целочисленная переме
 "количество верных ответов.В зависимости от значения этой переменной вывести в консоль оценку");
 
 let userNum = parseInt(prompt("Введите число"));
-if (90 <= userNum <= 100) {
+if ( userNum <= 100 && userNum >= 90) {
 console.log("отлично");
-} else if (60 <= userNum <= 89); {
+} else if ( userNum <= 89 && userNum >= 60); {
 console.log("хорошо");
-} else if (40 <= userNum <= 59); {
+} else if ( userNum <= 59 && userNum >= 40);{
     console.log("удовлетворительно");
-} else {
+} else if ( userNum <= 39 && userNum >= 0); {
     console.log("попробуйте еще раз");
+} else{
+    console.log("")
+
 }
