@@ -49,9 +49,9 @@ while (cap > 0 && washLiq > 0) {
     cap -= 1;
     washLiq -= .5;
     if (cap === 0 && washLiq >0) {
-        console.log("Остаток моющего средства  ${washLiq}.");
+        console.log("Остаток моющего средства  {washLiq}");
     } else if (washLiq === 0 &&  cap > 0) {
-        console.log("Остаток грязных тарелок ${cap}.");
+        console.log("Остаток грязных тарелок {cap}");
     }
     }
 
