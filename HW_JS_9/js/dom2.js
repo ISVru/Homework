@@ -25,3 +25,16 @@ let animals = [{
         "additional_info": { "vaccinations": true, "passport": true }
     }
 ];
+
+let animalsSection = document.querySelector(".animals-section");
+
+function addAnimals(animalsArr, element) {
+    for (let animal of animalsArr) {
+        let cardAnimal = document.createElement("div");
+        cardAnimal.classList.add("card-animal");
+
+        let nameAnimal = document.createElement("h2");
+        nameAnimal.innerText = `${animal.name}`;
+
+        let ageAnimal = document.createElement("span");
+        ageAnimal.classList.add("age-animal");
