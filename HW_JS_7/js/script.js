@@ -53,11 +53,11 @@ let countTo = (obj, title, countToCard) => {
         if (obj[elem].title === title && obj[elem].count >= countToCard) {
             obj[elem].count -= countToCard;
             return true;
-        } else {
-            console.log(`count меньше чем ${countToCard}`);
-            return false;
         }
+
     }
+    console.log(`count меньше чем ${countToCard}`);
+    return false;
 }
 console.log(countTo(goods, "Пианино", 10));
 
