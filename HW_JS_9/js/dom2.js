@@ -38,3 +38,29 @@ function addAnimals(animalsArr, element) {
 
         let ageAnimal = document.createElement("span");
         ageAnimal.classList.add("age-animal");
+
+        let colorAnimal = document.createElement("span");
+        colorAnimal.innerText = `${animal.color}`;
+
+        let addInfo = document.createElement("div");
+        addInfo.classList.add("additional-info");
+
+        let vaccineInfo = document.createElement("span");
+        Object.values(obj).forEach((prop) => {
+            if (prop.vaccinations === true) vaccineInfo.innerText = "есть";
+            else vaccineInfo.innerText = "нет";
+        });
+
+        let passInfo = document.createElement("span");
+        Object.values(obj).forEach((prop) => {
+            if (prop.passport === true) passInfo.innerText = "есть";
+            else passInfo.innerText = "нет";
+        });
+
+        addInfo.append(vaccineInfo, passInfo);
+        card.append(animal.name, animal.color, addInfo);
+        animalsSection.append(cardAnimal);
+    }
+
+    document.body.append(animalsSection);
+}
