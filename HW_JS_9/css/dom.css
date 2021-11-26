@@ -30,3 +30,12 @@ td {
     border: 2px solid black;
     border-collapse: collapse;
 }
+#field{
+    display: grid;
+}
+
+div {
+    width: 100px;
+    height: 100px;
+    border: 1px solid black;
+}
