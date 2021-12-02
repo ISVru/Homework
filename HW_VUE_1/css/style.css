@@ -1,0 +1,47 @@
+body {
+    max-width: 1200px;
+    margin: 0 auto;
+    background-color: rgb(58, 235, 125);
+    font-size: 12px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+img {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+}
+
+#cats {
+    display: flex;
+    flex-direction: row;
+}
+
+#cats div {
+    flex: 1;
+    background-color: rgba(172, 154, 55, 0.3);
+    border: none;
+    color: rgb(197, 234, 245);
+    border-radius: 5px;
+    padding: 10px;
+    margin: 5px;
+}
+
+#cats div h2 {
+    text-align: center;
+    margin: 10px;
+    padding-left: 5px;
+}
+
+#cats div p {
+    text-align: start;
+}
+
+#cats div a {
+    padding: 1rem 1.5rem;
+    border: 2px solid;
+    border-color: rgb(54, 39, 7);
+    color: rgb(17, 56, 25);
+    text-decoration: none;
+    text-align: center;
+}

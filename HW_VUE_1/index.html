@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Домашнее задание №1 по vue</title>
+    <script src="https://unpkg.com/vue@next"></script>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+    <div id="cats">
+        <div v-for="cat in cats">
+            <h2>{{ cat.name.toUpperCase() }}</h2>
+            <p>{{ cat.age }}</p>
+            <p>{{ cat.color }}</p>
+            <img v-bind:src="cat.img">
+            <a v-bind:href="#">Подробнее</a>
+        </div>
+    </div>
+
+    <script src="js/script.js"></script>
+</body>
+
+</html>
