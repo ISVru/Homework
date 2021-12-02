@@ -85,7 +85,8 @@ for (let word of arr) {
 
 function generateTable(arr) {
     let table = document.createElement("table");
-    let row = table.insertRow(0);
+    table.classList.add("table");
+    let row = table.insertRow();
     for (let key in arr[0]) {
         let cell = row.insertCell();
         cell.innerText = key.toLocaleUpperCase();
@@ -99,7 +100,7 @@ function generateTable(arr) {
 
         }
     }
-    document.body.append(table);
+    document.getElementById("for-table").append(table);
 }
 
 generateTable(goods);
