@@ -1,7 +1,7 @@
 body {
     max-width: 1200px;
     margin: 0 auto;
-    background-color: rgb(58, 235, 125);
+    background-color: rgb(148,235,222);
     font-size: 12px;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
@@ -19,9 +19,9 @@ img {
 
 #cats div {
     flex: 1;
-    background-color: rgba(172, 154, 55, 0.3);
+    background-color: rgba(254,239,1);
     border: none;
-    color: rgb(197, 234, 245);
+    color: rgb(27,15,62);
     border-radius: 5px;
     padding: 10px;
     margin: 5px;
