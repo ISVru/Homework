@@ -16,7 +16,7 @@
         <div v-for="article in articles"
              :class="{'grid-items': viewStyle === 'grid',
                      'list-items': viewStyle === 'list'}">
-            <img :src="article.image" alt="Картинка к статье">
+            <img :src="article.image" alt="any image">
             <p>{{ article.title.toUpperCase() }}</p>
         </div>
     </div>
