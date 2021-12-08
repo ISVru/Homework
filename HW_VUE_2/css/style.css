@@ -1,0 +1,28 @@
+#app {
+    width: 1200px;
+}
+
+#app > p {
+    display: inline;
+}
+
+.product {
+    display: block;
+    margin: 20px;
+    padding: 6px;
+    color: #295fff;
+    font-family: Verdana;
+
+}
+
+.zero {
+    background-color: #89ffc3;
+}
+
+.not-many {
+    background-color: #ffb73e;
+}
+
+.many {
+    background-color: #e5edff;
+}
